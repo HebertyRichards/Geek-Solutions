@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <section id="mySection2">
+        <div class="modo">
+            <a href="index.html"><img src="imagens/icone.png" alt="icon" name="icon"></a>
+            <button id="darkModeButton" title="Ligar/Desligar Modo Escuro" onclick="toggleDarkMode()"></button>
+        </div>
+        <div class="container">
+            <a href="index.html"><button>Ínicio</button></a>
+            <a href="sobre.html"><button>Quem Somos</button></a>
+            <a href="contato.html"><button>Contato</button></a>
+            <a href="servicos.html"><button>Serviços</button></a>
+        </div>
+    </section>
+    <section id="mySection">
+        <div class="modo">
+            <button class="openbtn" onclick="openNav()">☰</button>
+            <button id="darkModeButton" title="Ligar/Desligar Modo Escuro" onclick="toggleDarkMode()"></button>
+        </div>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html"><button>Ínicio</button></a>
+            <a href="sobre.html"><button>Quem Somos</button></a>
+            <a href="contato.html"><button>Contato</button></a>
+            <a href="servicos.html"><button>Serviços</button></a>
+        </div>
+    </section>
+    <br><br>
+    <div id="contact">
+        <h1>Entre em Contato</h1>
+        <form action="#" method="post" class="form">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" placeholder="Digite o seu nome" required>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite o seu E-mail" required>
+            <label for="number">Número</label>
+            <input type="number" name="number" id="number" placeholder="Digite seu número de telefone" required>
+            <label for="message">Mensagem</label>
+            <textarea name="message" id="message" placeholder="Deixa uma mensagem para nós" required></textarea>
+        </form>
+    </div>
+</body>
+</html>

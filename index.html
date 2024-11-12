@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geek Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+
+<body>
+    <section id="mySection2">
+        <div class="modo">
+            <a href="index.html"><img src="imagens/icone.png" alt="icon" name="icon"></a>
+            <button id="darkModeButton" title="Ligar/Desligar Modo Escuro" onclick="toggleDarkMode()"></button>
+        </div>
+        <div class="container">
+            <a href="index.html"><button>Ínicio</button></a>
+            <a href="sobre.html"><button>Quem Somos</button></a>
+            <a href="contato.html"><button>Contato</button></a>
+            <a href="servicos.html"><button>Serviços</button></a>
+        </div>
+    </section>
+    <section id="mySection">
+        <div class="modo">
+            <button class="openbtn" onclick="openNav()">☰</button>
+            <button id="darkModeButton" title="Ligar/Desligar Modo Escuro" onclick="toggleDarkMode()"></button>
+        </div>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html"><button>Ínicio</button></a>
+            <a href="sobre.html"><button>Quem Somos</button></a>
+            <a href="contato.html"><button>Contato</button></a>
+            <a href="servicos.html"><button>Serviços</button></a>
+        </div>
+    </section>
+    <nav>
+        <div class="image">
+            <div class="inicio">
+                <h1>Tecnologia do Futuro</h1>
+                <p>Com consultoria em transformação digital, infraestrutura em nuvem escalável, integração inteligente
+                    de IoT e suporte especializado, ajudamos a impulsionar o seu negócio</p>
+            </div>
+        </div>
+        <div class="back">
+            <div class="text">
+                <h2>NA GEEK SOLUTIONS TEM INOVAÇÃO!</h2>
+                <p>Na Geek Solutions, seu negócio é nossa prioridade. Com uma estrutura avançada e processos ágeis,
+                    oferecemos o suporte e a tecnologia que você precisa para otimizar o atendimento e manter o foco
+                    total no sucesso do seu cliente. Conte com a nossa experiência e inovação para tornar o seu trabalho
+                    mais eficiente e livre de preocupações!</p>
+            </div>
+        </div><br><br>
+        <div id="partner">
+            <h2>Nossos Clientes!</h2>
+            <div id="carousel">
+                <img src="imagens/geek.png">
+                <img src="imagens/renner.png">
+                <img src="imagens/zurich.png">
+                <img src="imagens/nestle.png">
+                <img src="imagens/itau.png">
+                <img src="imagens/casas.png">
+                <img src="imagens/uninove.png">
+                <img src="imagens/c6.png">
+            </div>
+        </div><br><br>
+        <div id="main">
+            <h2 class="h2">O que dizem sobre a Geek Solutions</h2>
+            <div id="coments">
+                <div class="caroussel">
+                    <p>Excelente empresa, com serviços de alta qualidade e atendimento atencioso.</p>
+                    <div class="profile">
+                        <img src="imagens/msg.png">
+                        <h3>Leonardo de Souza</h3>
+                    </div>
+                    <span class="company">GeekNine</span>
+                </div>
+                <div class="caroussel">
+                    <p>Trabalho de excelência e profissionalismo; recomendo com certeza. Agradeço pela agilidade e pela
+                        atenção dedicadas.</p>
+                    <div class="profile">
+                        <img src="imagens/msg.png">
+                        <h3>Bruna Magalhães</h3>
+                    </div>
+                    <span class="company">Lojas Renner SA</span>
+                </div>
+                <div class="caroussel">
+                    <p>Gostaríamos de parabenizar a Geek Solutions! Hoje passamos por auditoria, e os procedimentos
+                        estavam
+                        todos em conformidade. Agradecemos à equipe, sempre gentil e prestativa com todos!</p>
+                    <div class="profile">
+                        <img src="imagens/msg.png">
+                        <h3>Daniel de Silva</h3>
+                    </div>
+                    <span class="company">Banco Itaú Unibanco</span>
+                </div>
+                <div class="caroussel">
+                    <p>A Geek Solutions é uma empresa de TI que nos apresentou soluções precisas, com experiência no
+                        setor de contabilidade, prometendo uma prestação de serviços de TI capaz de resolver todos os nossos
+                        problemas de informática.</p>
+                    <div class="profile">
+                        <img src="imagens/msg.png">
+                        <h3>Hugo Souza</h3>
+                    </div>
+                    <span class="company">C6 Bank</span>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="consulting">
+            <h2>Transforme seu negócio com soluções de TI sob medida!</h2>
+            <p class="frase">Na Geek Solutions, acreditamos que a tecnologia deve impulsionar o crescimento e facilitar
+                o dia a dia das empresas. Nossa consultoria especializada em TI oferece soluções personalizadas que vão
+                desde a segurança de dados até a otimização de sistemas e automação de processos</p>
+            <p class="frase">Com nossa equipe de especialistas, garantimos que sua empresa tenha acesso às mais recentes
+                inovações e
+                às melhores práticas de mercado, proporcionando mais eficiência, redução de custos e uma infraestrutura
+                robusta e preparada para o futuro.</p>
+            <div class="botao">
+                <a href="contato.html"><button>Fale com um Especialista</button></a>
+            </div>
+        </div>
+    </nav>
+    <div class="contato2">
+        <h2>
+            Acompanhe nossas redes sociais para ficar por dentro de todas as novidades e do nosso dia a dia!</h2>
+        <div class="redes">
+            <a href="#" target="_blank"><button title="Facebook"></button></a>
+            <a href="#" target="_blank"><button title="Instagram"></button></a>
+            <a href="#" target="_blank"><button title="Twitter"></button></a>
+        </div>
+        <footer>
+            <div class="menu">
+                <h2>Mapping</h2>
+                <a href="index.html"><button>Ínicio</button></a>
+                <a href="sobre.html"><button>Quem Somos</button></a>
+                <a href="contato.html"><button>Contato</button></a>
+                <a href="#partner"><button>Parceiros</button></a>
+                <a href="#main"><button>Avaliações</button></a>
+            </div>
+            <div class="menu2">
+                <h2>Ajuda e Suporte</h2>
+                <a href="cookies.html"><button>Política de Cookies</button></a>
+                <a href="politica.html"><button>Política de Uso</button></a>
+                <a href="termos.html"><button>Termos de Uso</button></a>
+            </div>
+        </footer>
+        <div id="saida">Saída</div>
+    </div>
+    <div class="logo">
+        <p>Geek Solutions © 2024 Todos os Direitos Reservados</p>
+    </div>
+</body>
+
+</html>
