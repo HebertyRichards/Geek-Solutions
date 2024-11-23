@@ -330,7 +330,7 @@ textarea {
     border: 2px solid white;
 }
 
-.dark-mode #clear {
+.dark-mode #clear, .dark-mode #submit {
     background-color: white;
 }
 
@@ -537,10 +537,16 @@ main h3 {
     margin-top: 5px;
 }
 
-#clear {
+#clear, #submit {
     background-color: transparent;
     border: 1px solid gray;
     width: 80px;
+}
+
+.element {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
 }
 
 #state {
@@ -729,7 +735,7 @@ main h3 {
     }
 
     #contact {
-        height: 350px;
+        height: 400px;
         width: 90%;
     }
 
@@ -755,8 +761,7 @@ main h3 {
         margin-left: 10px;
     }
 
-
-    label {
+    label, #clear, #submit {
         margin-left: 10px;
     }
 
