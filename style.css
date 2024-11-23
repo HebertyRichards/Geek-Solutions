@@ -541,6 +541,7 @@ main h3 {
     background-color: whitesmoke;
     border: 1px solid gray;
     width: 80px;
+    cursor: pointer;
 }
 
 .element {
