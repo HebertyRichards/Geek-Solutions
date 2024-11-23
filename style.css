@@ -330,7 +330,8 @@ textarea {
     border: 2px solid white;
 }
 
-.dark-mode #clear, .dark-mode #submit {
+.dark-mode #clear,
+.dark-mode #submit {
     background-color: white;
 }
 
@@ -537,7 +538,8 @@ main h3 {
     margin-top: 5px;
 }
 
-#clear, #submit {
+#clear,
+#submit {
     background-color: whitesmoke;
     border: 1px solid gray;
     width: 80px;
@@ -762,7 +764,9 @@ main h3 {
         margin-left: 10px;
     }
 
-    label, #clear, #submit {
+    label,
+    #clear,
+    #submit {
         margin-left: 10px;
     }
 
