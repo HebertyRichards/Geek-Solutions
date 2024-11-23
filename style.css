@@ -17,12 +17,18 @@ body {
 }
 
 #mySection2 {
+    width: 100%;
+    position: fixed;
     background-color: rgb(3, 98, 241);
     display: flex;
     justify-content: space-between;
+    z-index: 10;
 }
 
 #mySection {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
     background-color: rgb(3, 98, 241);
 }
 
@@ -184,6 +190,7 @@ footer {
 }
 
 .openbtn {
+    opacity: 1;
     cursor: pointer;
     background-color: rgb(3, 98, 241);
     color: white;
@@ -198,6 +205,9 @@ footer {
     justify-content: center;
     margin: 0 auto;
     border-radius: 10px;
+    width: 20%;
+    height: 450px;
+    background-color: gray;
 }
 
 .form {
@@ -209,10 +219,14 @@ footer {
 #name,
 #email,
 #number {
+    border: none;
+    border-radius: 10px;
     height: 30px;
 }
 
 textarea {
+    border: none;
+    border-radius: 10px;
     height: 100px;
     width: 297px;
     resize: none;
@@ -316,10 +330,18 @@ textarea {
     border: 2px solid white;
 }
 
-nav p,
-nav h1,
-nav h2,
-nav h3 {
+.dark-mode #clear {
+    background-color: white;
+}
+
+.dark-mode .work {
+    border: 1px solid whitesmoke;
+}
+
+main p,
+main h1,
+main h2,
+main h3 {
     text-align: center;
 }
 
@@ -335,6 +357,18 @@ nav h3 {
     border: 1px solid transparent;
 }
 
+.image2 {
+    background-image: url(imagens/rh.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 60vh;
+    margin-bottom: auto;
+    margin-top: auto;
+    border: 1px solid transparent;
+}
+
 .inicio {
     width: 30%;
     margin: 0 auto;
@@ -342,11 +376,26 @@ nav h3 {
     margin-top: 200px;
 }
 
-.inicio h1 {
+.inicio2 {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 370px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.inicio h1,
+.inicio2 h2 {
     font-size: 32px;
 }
 
-.inicio p {
+.work p {
+    margin: 4px;
+}
+
+.inicio p,
+.inicio2 p {
     font-size: 20px;
 }
 
@@ -363,9 +412,15 @@ nav h3 {
 
 .text p {
     color: white;
+    font-size: 20px;
 }
 
-#partner {
+.text h2 {
+    font-size: 30px;
+}
+
+#partner,
+.partner {
     width: 50%;
     margin: auto;
 }
@@ -384,6 +439,16 @@ nav h3 {
 
 #carousel {
     display: flex;
+}
+
+#imagens img {
+    width: 240px;
+    height: 340px;
+    margin-left: 30px;
+}
+
+#imagens {
+    display: flex
 }
 
 .h2,
@@ -413,6 +478,7 @@ nav h3 {
 .caroussel .profile {
     display: flex;
     align-items: center;
+    margin-left: 5px;
 }
 
 .caroussel .profile img {
@@ -432,6 +498,57 @@ nav h3 {
     padding: 10px;
 }
 
+.consulting h2 {
+    font-size: 30px;
+}
+
+.frase {
+    font-size: 20px;
+}
+
+.conteudo {
+    width: 60%;
+    margin: auto;
+}
+
+#contact2 {
+    display: flex;
+    border-radius: 10px;
+    color: rgb(3, 98, 241);
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.work {
+    margin-top: 1000px;
+    border: 1px solid black;
+    width: 20%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#name2,
+#email2,
+#number2,
+#town {
+    border: 1px solid gray;
+    width: 300px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+#clear {
+    background-color: transparent;
+    border: 1px solid gray;
+    width: 80px;
+}
+
+#state {
+    border: 1px solid gray;
+    width: 80px;
+}
+
 .frase {
     width: 60%;
     margin: auto;
@@ -440,7 +557,7 @@ nav h3 {
 .botao {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 .botao button {
@@ -448,8 +565,9 @@ nav h3 {
     border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
     cursor: pointer;
-    padding: 10px;
+    padding: 20px;
     color: white;
+    font-size: 20px;
 }
 
 .botao button:hover {
@@ -491,12 +609,14 @@ nav h3 {
     }
 
     .inicio,
-    .inicio h2 {
+    .inicio h2,
+    .inicio2 h2 {
         margin-top: 100px;
         font-size: 28px;
     }
 
-    .inicio p {
+    .inicio p,
+    .inicio2 p {
         font-size: 16px;
     }
 
@@ -504,6 +624,10 @@ nav h3 {
         width: 270px;
         height: 130px;
         margin-left: 20px
+    }
+
+    #contact {
+        width: 40%;
     }
 }
 
@@ -550,13 +674,16 @@ nav h3 {
     }
 
     .inicio,
-    .inicio h2 {
+    .inicio h2,
+    .inicio2,
+    .inicio2 h2 {
         width: 50%;
         margin-top: 50px;
         font-size: 20px;
     }
 
-    .inicio p {
+    .inicio p,
+    .inicio2 p {
         font-size: 12px;
     }
 
@@ -572,6 +699,12 @@ nav h3 {
         margin-left: 0px;
     }
 
+    #imagens img {
+        margin-left: 0px;
+        width: 80px;
+        height: 250px;
+    }
+
     .caroussel .profile img {
         margin-right: 5px;
         width: 20px;
@@ -584,5 +717,30 @@ nav h3 {
 
     footer {
         gap: 30px;
+    }
+
+    #contact {
+        height: 350px;
+        width: 90%;
+    }
+
+    #name,
+    #email,
+    #number {
+        height: 20px;
+        width: 250px;
+    }
+
+    textarea {
+        height: 80px;
+        width: 250px;
+    }
+
+    .text p {
+        font-size: 16px;
+    }
+
+    .text h2 {
+        font-size: 20px;
     }
 }

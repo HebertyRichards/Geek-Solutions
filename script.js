@@ -8,12 +8,10 @@ function toggleDarkMode() {
 
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
 }
 
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
 }
 
 function verificarLargura() {
@@ -128,3 +126,62 @@ $(document).ready(function () {
     ]
   });
 });
+
+$(document).ready(function () {
+  $('#imagens').slick({
+    dots: false,
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+});
+
+const slider = document.querySelector('slider');
+const btnPrev = document.getElementById('nextButton');
+const btnBack = document.getElementById('backButton');
+
+let current = 0;
+
+function hidden() {
+  slider.forEach(item => item.classList.remove('on'))
+}
+
+function show() {
+  slider[current].classList.add('on')
+}
+
+function next() {
+  hidden()
+  if (current === slider.length - 1) {
+    current = 0
+  } else {
+    current++
+  }
+  show()
+}
+
+function back() {
+  hidden()
+  if (current === 0) {
+    current = slider.length - 1
+  } else {
+    current--
+  }
+  show()
+}
+
+btnNext.addEventListener('click', nextSlider)
+btnBack.addEventListener('click', prevSlider)
