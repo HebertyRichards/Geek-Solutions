@@ -1,8 +1,8 @@
 function toggleDarkMode() {
   const body = document.body;
   body.classList.toggle("dark-mode");
-  const button = document.getElementById("darkModeButton");
   const isDarkMode = body.classList.contains("dark-mode");
+  const button = document.getElementById("darkModeButton");
   button.style.backgroundImage = isDarkMode ? "url('imagens/night.png')" : "url('imagens/sun.png')";
 }
 
@@ -13,6 +13,8 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
 }
+
+
 
 function verificarLargura() {
   const section = document.getElementById('mySection');
@@ -149,39 +151,3 @@ $(document).ready(function () {
   });
 });
 
-const slider = document.querySelector('slider');
-const btnPrev = document.getElementById('nextButton');
-const btnBack = document.getElementById('backButton');
-
-let current = 0;
-
-function hidden() {
-  slider.forEach(item => item.classList.remove('on'))
-}
-
-function show() {
-  slider[current].classList.add('on')
-}
-
-function next() {
-  hidden()
-  if (current === slider.length - 1) {
-    current = 0
-  } else {
-    current++
-  }
-  show()
-}
-
-function back() {
-  hidden()
-  if (current === 0) {
-    current = slider.length - 1
-  } else {
-    current--
-  }
-  show()
-}
-
-btnNext.addEventListener('click', nextSlider)
-btnBack.addEventListener('click', prevSlider)

@@ -143,12 +143,32 @@ button[title="Twitter"] {
 
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 50px;
     padding: 25px;
     background-color: #333;
     text-align: center;
+    color: white;
 }
+
+footer img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.menu3,
+.menu4 {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.menu3 p,
+.menu4 p {
+    text-align: left;
+}
+
 
 .sidebar {
     height: 100%;
@@ -251,6 +271,7 @@ textarea {
     background-color: transparent;
     font-weight: bold;
     text-decoration: none;
+    text-align: left;
 }
 
 .menu button,
@@ -507,11 +528,6 @@ main h3 {
     font-size: 20px;
 }
 
-.conteudo {
-    width: 60%;
-    margin: auto;
-}
-
 #contact2 {
     display: flex;
     border-radius: 10px;
@@ -580,6 +596,39 @@ main h3 {
 
 .botao button:hover {
     filter: brightness(0.8);
+}
+
+.purpose {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.s1 {
+    display: flex;
+    align-items: left;
+    margin-top: 100px;
+}
+
+.s1 img {
+    width: 300px;
+    height: 300px;
+}
+
+
+.master {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.master p {
+    text-align: left;
+    margin-left: 5px;
+}
+
+.services {
+    width: 60%;
+    margin: 0 auto;
 }
 
 @media (max-width: 1366px) {
@@ -781,5 +830,35 @@ main h3 {
 
     .text h2 {
         font-size: 20px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    .menu3,
+    .menu4 {
+        width: 60%;
+    }
+
+    .purpose {
+        width: 90%;
+    }
+
+    footer img {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+    }
+    .services {
+        width: 90%;
+    }
+    .master {
+        width: 90%;
+    }
+
+    .s1 img {
+        width: 130px;
+        height: 150px;
     }
 }
