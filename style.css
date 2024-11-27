@@ -401,7 +401,7 @@ main h3 {
 .inicio2 {
     width: 40%;
     margin: 0 auto;
-    margin-top: 360px;
+    margin-top: 300px;
     color: white;
     font-weight: bold;
 }
@@ -603,31 +603,43 @@ main h3 {
     margin: 0 auto;
 }
 
-.s1 {
-    display: flex;
-    align-items: left;
-    margin-top: 100px;
-}
-
-.s1 img {
-    width: 300px;
-    height: 300px;
-}
-
-
-.master {
-    display: flex;
+#master,
+#master1,
+#master2,
+#master3,
+#master4 {
+    display: none;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    margin: 0 auto;
     width: 50%;
+    color: white;
 }
 
-.master p {
-    text-align: left;
-    margin-left: 5px;
+#s1 img {
+    display: flex;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+}
+
+#s1 {
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .services {
-    width: 60%;
+    background-image: url(imagens/tecnologia.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    border-radius: 20px;
+    width: 80%;
+    height: auto;
     margin: 0 auto;
 }
 
@@ -667,7 +679,8 @@ main h3 {
 
     .inicio,
     .inicio h2,
-    .inicio2 h2 {
+    .inicio2 h2,
+    .inicio2 {
         margin-top: 100px;
         font-size: 28px;
     }
@@ -686,6 +699,14 @@ main h3 {
     #contact,
     .work {
         width: 40%;
+    }
+
+    #master,
+    #master1,
+    #master2,
+    #master3,
+    #master4 {
+        width: 65%;
     }
 }
 
@@ -741,7 +762,6 @@ main h3 {
 
     .inicio2,
     .inicio2 h2 {
-        margin-top: 100px;
         font-size: 20px;
     }
 
@@ -839,6 +859,7 @@ main h3 {
     .menu3,
     .menu4 {
         width: 60%;
+        font-size: 12px;
     }
 
     .purpose {
@@ -850,15 +871,25 @@ main h3 {
         height: 15px;
         margin-right: 5px;
     }
+
     .services {
         width: 90%;
     }
+
     .master {
         width: 90%;
     }
 
-    .s1 img {
+    #s1 img {
         width: 130px;
         height: 150px;
+    }
+
+    .s1 #master,
+    #master1,
+    #master2,
+    #master3,
+    #master4 {
+        width: 90%;
     }
 }

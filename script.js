@@ -14,7 +14,37 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
 }
 
+function expansed(id) {
+  const ids = ['master', 'master1', 'master2', 'master3', 'master4'];
+  ids.forEach(elId => {
+    const element = document.getElementById(elId);
+    if (element) {
+      element.style.display = 'none';
+    }
+  });
 
+  const selectedElement = document.getElementById(id);
+  if (selectedElement) {
+    selectedElement.style.display = 'flex';
+  }
+}
+
+function unexpansed() {
+  const ids = ['master', 'master1', 'master2', 'master3', 'master4'];
+  ids.forEach(id => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.style.display = 'none';
+    }
+  });
+}
+
+function hideContent(id) {
+  const element = document.getElementById(id);
+  if (element) {
+    element.style.display = 'none';
+  }
+}
 
 function verificarLargura() {
   const section = document.getElementById('mySection');
@@ -151,3 +181,13 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $('#s1').slick({
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: false
+  });
+});
