@@ -61,16 +61,18 @@ body {
 }
 
 .container button {
-    color: white;
     border: none;
     background-color: transparent;
     font-weight: bold;
     font-size: 25px;
     cursor: pointer;
-    text-decoration: none;
 }
 
-button:hover {
+.container button a {
+    color: white;
+    text-decoration: none;
+}
+button a:hover {
     color: #2e2e2e;
 }
 
