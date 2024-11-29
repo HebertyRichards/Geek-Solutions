@@ -46,11 +46,6 @@ body {
     justify-content: center;
 }
 
-.container a {
-    justify-content: center;
-    margin-left: 50px;
-}
-
 .modo img,
 .modo a {
     width: 35px;
@@ -60,19 +55,18 @@ body {
     margin-top: auto;
 }
 
-.container button {
+.container a {
+    margin-left: 50px;
+    color: white;
     border: none;
     background-color: transparent;
     font-weight: bold;
     font-size: 25px;
     cursor: pointer;
-}
-
-.container button a {
-    color: white;
     text-decoration: none;
 }
-button a:hover {
+
+a:hover {
     color: #2e2e2e;
 }
 
@@ -105,7 +99,7 @@ button a:hover {
     transition: 0.5s;
 }
 
-button[title="Facebook"] {
+#facebook {
     background-image: url(imagens/Facebook.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -116,7 +110,7 @@ button[title="Facebook"] {
     margin: 0 10px;
 }
 
-button[title="Instagram"] {
+#instagram {
     background-image: url(imagens/Instagram.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -127,7 +121,7 @@ button[title="Instagram"] {
     margin: 0 10px;
 }
 
-button[title="Twitter"] {
+#twitter {
     background-image: url(imagens/twitter.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -185,7 +179,6 @@ footer img {
     padding-top: 60px;
 }
 
-.sidebar button,
 .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -199,7 +192,7 @@ footer img {
     cursor: pointer;
 }
 
-.sidebar button:hover {
+.sidebar a:hover {
     color: #2e2e2e;
 }
 
@@ -293,7 +286,8 @@ textarea {
     justify-content: end;
 }
 
-#darkModeButton {
+#darkModeButton,
+#darkModeButton2 {
     background-image: url(imagens/sun.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -328,6 +322,7 @@ textarea {
     color: white;
 }
 
+.dark-mode #darkModeButton,
 .dark-mode #darkModeButton {
     color: white;
 }

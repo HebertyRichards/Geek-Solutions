@@ -6,6 +6,14 @@ function toggleDarkMode() {
   button.style.backgroundImage = isDarkMode ? "url('imagens/night.png')" : "url('imagens/sun.png')";
 }
 
+function toggleDarkMode2() {
+  const body = document.body;
+  body.classList.toggle("dark-mode");
+  const isDarkMode = body.classList.contains("dark-mode");
+  const button = document.getElementById("darkModeButton");
+  button.style.backgroundImage = isDarkMode ? "url('imagens/night.png')" : "url('imagens/sun.png')";
+}
+
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
 }
