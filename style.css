@@ -252,32 +252,20 @@ textarea {
 }
 
 .menu,
-.menu button,
-.menu2,
-.menu2 button,
-.menu a,
-.menu2 a {
+.menu2 {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    border: none;
-    color: white;
-    font-size: 16px;
     background-color: transparent;
+    font-size: 16px;
     font-weight: bold;
-    text-decoration: none;
     text-align: left;
 }
 
-.menu button,
-.menu2 button {
-    cursor: pointer;
-}
-
-.menu button:hover,
-.menu2 button:hover {
-    letter-spacing: 0.1em;
-    transition: 2s;
+.menu a,
+.menu2 a {
+    text-decoration: none;
+    color: white;
 }
 
 #saida {
@@ -581,7 +569,7 @@ main h3 {
     padding: 20px;
 }
 
-.botao button {
+.botao a {
     background-color: rgb(3, 98, 241);
     border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
@@ -589,9 +577,11 @@ main h3 {
     padding: 20px;
     color: white;
     font-size: 20px;
+    text-decoration: none;
+    text-align: center;
 }
 
-.botao button:hover {
+.botao a:hover {
     filter: brightness(0.8);
 }
 
@@ -641,11 +631,10 @@ main h3 {
 }
 
 @media (max-width: 1366px) {
-    .container button {
+    .container a {
         font-size: 16px;
     }
 
-    .sidebar button,
     .sidebar a {
         font-size: 16px;
     }
@@ -655,9 +644,7 @@ main h3 {
     }
 
     .menu,
-    .menu button,
     .menu2,
-    .menu2 button,
     a {
         font-size: 12px;
     }
@@ -709,9 +696,9 @@ main h3 {
 
 @media (max-width: 800px) {
 
-    button[title="Facebook"],
-    button[title="Instagram"],
-    button[title="Twitter"] {
+    #facebook,
+    #instagram,
+    #twitter {
         width: 20px;
         height: 20px;
     }
@@ -729,6 +716,7 @@ main h3 {
     }
 
     #darkModeButton,
+    #darkModeButton2,
     .modo img,
     .modo a {
         width: 20px;
@@ -742,11 +730,10 @@ main h3 {
     }
 
     .menu,
-    .menu button,
     .menu2,
-    .menu2 button,
     a {
         font-size: 10px;
+        gap: 15px;
     }
 
     .inicio,
@@ -855,7 +842,7 @@ main h3 {
 
     .menu3,
     .menu4 {
-        width: 60%;
+        width: 85%;
         font-size: 12px;
     }
 
