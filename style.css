@@ -430,6 +430,12 @@ main h3 {
 .partner {
     width: 50%;
     margin: auto;
+    text-align: center;
+}
+
+.partner a {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 #carousel img {
