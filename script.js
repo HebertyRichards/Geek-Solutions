@@ -4,6 +4,7 @@ function toggleDarkMode() {
   const isDarkMode = body.classList.contains("dark-mode");
   const button = document.getElementById("darkModeButton");
   button.style.backgroundImage = isDarkMode ? "url('imagens/night.png')" : "url('imagens/sun.png')";
+  localStorage.setItem("darkMode", isDarkMode ? "enabled" : "disabled");
 }
 
 function toggleDarkMode2() {
@@ -12,7 +13,19 @@ function toggleDarkMode2() {
   const isDarkMode = body.classList.contains("dark-mode");
   const button = document.getElementById("darkModeButton");
   button.style.backgroundImage = isDarkMode ? "url('imagens/night.png')" : "url('imagens/sun.png')";
+  localStorage.setItem("darkMode", isDarkMode ? "enabled" : "disabled");
 }
+
+function saveDark() {
+  const savedMode = localStorage.getItem("darkMode");
+  if (savedMode === "enabled") {
+    document.body.classList.add("dark-mode");
+    const button = document.getElementById("darkModeButton");
+    button.style.backgroundImage = "url('imagens/night.png')";
+  }
+}
+
+saveDark();
 
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
