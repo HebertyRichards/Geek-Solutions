@@ -1,3 +1,5 @@
+//essa função booleana, ao clicar no botão a ´página fica no modo escuro e trocar o png sol para a lua. ao clicar novamente retorna ao padrão
+
 function toggleDarkMode() {
   const body = document.body;
   body.classList.toggle("dark-mode");
@@ -7,6 +9,7 @@ function toggleDarkMode() {
   localStorage.setItem("darkMode", isDarkMode ? "enabled" : "disabled");
 }
 
+// mesma coisa acima, mas na tela mobile
 function toggleDarkMode2() {
   const body = document.body;
   body.classList.toggle("dark-mode");
@@ -16,6 +19,7 @@ function toggleDarkMode2() {
   localStorage.setItem("darkMode", isDarkMode ? "enabled" : "disabled");
 }
 
+//essa função adeixa o modo escuro armazenado, caso mude de página no modo escuro ela estara salva e fica no modo escuro na outra página
 function saveDark() {
   const savedMode = localStorage.getItem("darkMode");
   if (savedMode === "enabled") {
@@ -27,6 +31,7 @@ function saveDark() {
 
 saveDark();
 
+//barra lateral para responsividade android
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
 }
@@ -34,7 +39,7 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
 }
-
+//esconde os elementos em html dentro de um array, ao clicar na imagem exibe o conteúdo em html
 function expansed(id) {
   const ids = ['master', 'master1', 'master2', 'master3', 'master4'];
   ids.forEach(elId => {
@@ -66,7 +71,7 @@ function hideContent(id) {
     element.style.display = 'none';
   }
 }
-
+//função responsiva, caso a largura maior que 768 pixels deixa o conteudo visivel
 function verificarLargura() {
   const section = document.getElementById('mySection');
 
@@ -80,7 +85,7 @@ function verificarLargura() {
 verificarLargura();
 
 window.addEventListener('resize', verificarLargura);
-
+//mesma coisa porem se for menor que 768 pixels
 function verificarLargura2() {
   const section2 = document.getElementById('mySection2');
   if (window.innerWidth < 768) {
@@ -93,7 +98,7 @@ function verificarLargura2() {
 verificarLargura2();
 
 window.addEventListener('resize', verificarLargura2);
-
+//função que fala a data atual do seu sistema operacional em tempo real
 function atualizarRelogio() {
   let dia = new Date().getDay();
   let saida = document.getElementById('saida');
@@ -131,7 +136,7 @@ function atualizarRelogio() {
   saida.innerHTML += hoje + " " + dataAtual.toLocaleTimeString();
 }
 setInterval(atualizarRelogio, 995);
-
+//carousel responsivo, determina o tempo que vai aparecer um ou se vai ser estático, quantos itens vai aparecer conforme for a responsividade
 $(document).ready(function () {
   $('#carousel').slick({
     dots: false,
