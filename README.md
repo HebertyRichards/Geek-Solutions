@@ -44,4 +44,4 @@ A Geek Solutions é uma solução web desenvolvida para atender empresas do seto
 - **API de envio de e-mails (SMTP)**
 
 ## ✏️ Infos
-- Deploy: https://geeknine-production.up.railway.app/
+- Deploy: https://hebertyrichards.github.io/Geek-Solutions/
